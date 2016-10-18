@@ -13,19 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
 body {
-  background-color: #D8BFD8;
+  background-color: #5F9EA0;
 }
 
-p {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+h1, h2, ul, p {
+  font-family: "Verdana", Geneva, sans-serif;
+  text-align: center;
 }
+
 
 img {
   height: 400px;
   width: 600px;
+  display: block;
+  margin: auto;
 }
 
 .one {
   color: red;
+}
+
+.coolTitle {
+  background-color: #FF7F50
 }
