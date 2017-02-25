@@ -8,4 +8,7 @@
   <%= content_tag :li, class: current_page?(contact_url) ? 'active' : '' do %>
     <%= link_to 'Contact', contact_url %>
   <% end %>
+  <%= content_tag :li, class: current_page?(cake_url) ? 'active' : '' do %>
+    <%= link_to 'Cake', cake_url %>
+  <% end %>
 </ul>

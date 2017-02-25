@@ -1,0 +1,19 @@
+<h1>Here is a list of our users!</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+        <tr>
+          <td> <%= link_to user.id, user_path(user) %></td>
+          <td> <%= user.first_name %> </td>
+          <td> <%= user.last_name %> </td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
