@@ -18,11 +18,15 @@ body {
   background-color: #5F9EA0;
 }
 
-h1, h2, ul, p {
+h1, h2, p {
   font-family: "Verdana", Geneva, sans-serif;
   text-align: center;
 }
 
+a {
+  font-family: "Verdana", Geneva, sans-serif;
+  color: #FF7F50
+}
 
 img {
   height: 400px;

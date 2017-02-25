@@ -1,5 +1,11 @@
-<ul>
-  <li><a href="/">Home page</a></li>                 <!--HTML-->
-  <li><%= link_to 'About', about_url %></li> <!--Rails helper-->
-  <li><%= link_to 'Contact', contact_url %></li>
+<ul class="nav navbar-nav">
+  <%= content_tag :li, class: current_page?(root_path) ? 'active' : '' do %>
+    <%= link_to 'Home', root_path %>
+  <% end %>
+  <%= content_tag :li, class: current_page?(about_url) ? 'active' : '' do %>
+    <%= link_to 'About', about_url %>
+  <% end %>
+  <%= content_tag :li, class: current_page?(contact_url) ? 'active' : '' do %>
+    <%= link_to 'Contact', contact_url %>
+  <% end %>
 </ul>

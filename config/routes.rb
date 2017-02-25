@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index' #this woud be the rout
   get 'about' => 'about#index' #now only "about" woul be in the rout
   get 'contact' => 'contact#index'
+  get 'cake' => 'cake#indaex'
   root 'welcome#index'
 
 

@@ -2,12 +2,18 @@
 <html>
 <head>
   <title>Testapp</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'layouts/menu' %> <!--when I use the render method I need to name with an underscore at the beginning-->
-  <%= yield %>
+  <%= render 'layouts/nav_bar' %>
+  <!--when I use the render method I need to name with an underscore at the beginning-->
+  <div class="container">
+    <%= yield :page_title %>
+    <%= yield %>
+  </div>
 </body>
 </html>
