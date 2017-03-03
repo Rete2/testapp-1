@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'about' => 'about#index' #now only "about" woul be in the rout
   get 'contact' => 'contact#index'
   get 'cake' => 'cake#index' # url => controller#actions/
-  resources :users
+  resources :users 
   root 'welcome#index'
 
 
