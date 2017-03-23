@@ -2,9 +2,12 @@
 <table>
   <thead>
     <tr>
-      <th>ID</th>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>ID  </th>
+      <th>First name  </th>
+      <th>Last name  </th>
+      <th>Email  </th>
+      <th>Address  </th>
+      <th>Favorite number  </th>
     </tr>
   </thead>
   <tbody>
@@ -13,6 +16,9 @@
           <td> <%= link_to user.id, user_path(user) %></td>
           <td> <%= user.first_name %> </td>
           <td> <%= user.last_name %> </td>
+          <td> <%= user.email %> </td>
+          <td> <%= user.address %> </td>
+          <td> <%= user.favorite_no %> </td>
         </tr>
     <% end %>
   </tbody>

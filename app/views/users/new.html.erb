@@ -1,0 +1,20 @@
+<h1>Join Us</h1>
+
+<%= form_for @user do |form| %>
+  <%= form.text_field :first_name, placeholder: 'First name' %>
+  <%= form.text_field :last_name, placeholder: 'Last name' %>
+  <%= form.text_field :email, placeholder: 'email' %>
+  <%= form.text_field :address, placeholder: 'Address' %>
+  <%= form.text_field :favorite_no, placeholder: 'Favorite number' %>
+
+  <% if @user.errors.any? %>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+
+  <%= form.submit %>
+
+<% end %>
