@@ -42,3 +42,15 @@ img {
 .coolTitle {
   background-color: #FF7F50
 }
+
+th {
+  text-decoration: underline;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+td {
+  padding-right: 20px;
+  padding-left: 20px;
+}
