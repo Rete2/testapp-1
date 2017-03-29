@@ -5,10 +5,10 @@
   <%= content_tag :li, class: current_page?(about_url) ? 'active' : '' do %>
     <%= link_to 'About', about_url %>
   <% end %>
-  <%= content_tag :li, class: current_page?(contact_url) ? 'active' : '' do %>
-    <%= link_to 'Contact', contact_url %>
+  <%= content_tag :li, class: current_page?(new_user_path) ? 'active' : '' do %>
+    <%= link_to 'Join us', new_user_path %>
   <% end %>
-  <%= content_tag :li, class: current_page?(cake_url) ? 'active' : '' do %>
-    <%= link_to 'Cake', cake_url %>
+  <%= content_tag :li, class: current_page?(users_path) ? 'active' : '' do %>
+    <%= link_to 'Our community', users_path %>
   <% end %>
 </ul>

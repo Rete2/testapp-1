@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index' #this woud be the rout
-  get 'about' => 'about#index' #now only "about" woul be in the rout
+  get 'about' => 'about#index' #now only "about" would be in the rout
   get 'contact' => 'contact#index'
   get 'cake' => 'cake#index' # url => controller#actions/
   resources :users 
